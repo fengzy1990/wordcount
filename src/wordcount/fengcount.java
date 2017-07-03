@@ -61,7 +61,7 @@ public class fengcount {
 	//reduce process  
 	public static class IntSumReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 		private IntWritable result = new IntWritable();
-  
+
 		@Override
 		public void reduce(Text key, Iterable<IntWritable> values,
 				Reducer<Text, IntWritable, Text, IntWritable>.Context context)
